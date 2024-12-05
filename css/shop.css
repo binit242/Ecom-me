@@ -66,7 +66,7 @@ animation-range: entry 0% cover 40%;
 .shop-btn{
 align-items: center;
 --flex-gap: 3rem;
-transform: translateX(-42.3%);
+transform: translateX(-38%);
 transition: transform 250ms ease-in-out;
 cursor: pointer;
 }
@@ -162,7 +162,7 @@ grid-area: nine;
 }
 
 .product-list .shop-btn{
-    transform: translateX(-40%);
+    transform: translateX(-39%);
 }
 
 }

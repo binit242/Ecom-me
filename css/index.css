@@ -438,7 +438,7 @@
         .home-search input{
             padding: 1rem 0.5rem;
             width: 50%;
-            border-radius: 2rem;
+            border-radius: 5rem;
             border: 0;
             margin-right: 0.5rem;
             background-image: url('https://img.icons8.com/?size=100&id=3159&format=png&color=000000'); 
@@ -604,8 +604,8 @@
 
 .sub-menu-wrap{
     position: absolute;
-    top: 12%;
-    right: 6%;
+    top: 13%;
+    right: 4%;
     width: 370px;
     height: var(--no);
     overflow: hidden;
@@ -618,7 +618,7 @@
 
 .sub-menu{
     /* background: #fff; */
-    background-color:hsl(var(--clr-blue) / 0.1);
+    /* background-color:hsl(var(--clr-blue) / 0.1); */
     backdrop-filter: blur(20px);
     padding: 20px;
     margin: 10px;
@@ -701,6 +701,7 @@
           
           @media (max-width: 35em) {
               .primary-navigation {
+                
                   position: fixed;
                   flex-direction: column;
                   z-index: 9999;
@@ -730,13 +731,13 @@
                   z-index: 88888;
                   top: 5rem;
                   position: fixed;
-                  right: 14rem;
+                  right: 46%;
                   border: 0;
                   font-size: 3rem;
                   cursor: pointer;
                   transform: translateY(-300%);
-                  transition: transform 250ms ease-in-out;
-                  -webkit-transition: transform 250ms ease-in-out;
+                  transition: all 250ms ease-in-out;
+                  -webkit-transition: all 250ms ease-in-out;
               }
               .mobile-close-btn[data-visible="true"] {
                   transform: translateY(0%);
@@ -802,7 +803,7 @@
                   justify-content: center;
                   top: 5rem;
                   position: fixed;
-                  right: 25.1rem;
+                  right: 46%;
                   border: 0;
                   font-size: 3rem;
                   cursor: pointer;
