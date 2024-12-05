@@ -97,40 +97,34 @@
                 </div>
             </div>
             <!-- ================================ cart icon ======================================== -->
-            <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag"></i>
+            <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag" onclick="togcart()"></i>
 
 
             <!-- ============= Cart Box ============ -->
 
             <div id="cart-icon" data-visible="false" class="cart-icon">
-                <div class="shopping flex">
-                    <p>Shopping Basket</p>
-                    <i id="cross-btn" class="uil uil-times"></i>
-                </div>
-
-                <div class="cart bold-800 flex">
-                    <i class="uil uil-shopping-cart-alt"></i>
-                    <p>Cart is Empty</p>
-                </div>
-            </div>
-            <!-- ======================================================== -->
-            <!-- <div id="user-icon" data-visible="false" class="user-icon">
-                <div class="user flex">
-                    <p>User Account</p>
-                    <i id="x-btn" class="uil uil-times"></i>
-                </div>
-
-                <div class="profile bold-800 flex">
-                    <i class="uil uil-users-alt"></i>
-                    <p>Manage profile</p>
-                </div>
-            </div> -->
-            <!-- ======================================================== -->
+              
         </div>
 
         <div class="mobile-open-btn">
             <i class="uil uil-align-right"></i>
         </div>
+
+
+        <div class="sub-cart-wrap" id="subcart">
+            <div class="sub-cart">
+                <div class="cart-info">
+                    <h3>Shopping Cart</h3>
+                    
+                </div>
+                <hr>
+                <img src="image/cart.png">
+                <h2>Shopping Cart Empty</h2>
+            </div>
+        </div>
+
+
+
     </header>
 
     <!-- ======================== End header section ================================ -->

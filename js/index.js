@@ -31,22 +31,13 @@ const shoppingBag = document.getElementById('cart-box');
 const CartItem = document.getElementById('cart-icon');
 const crossBtn = document.getElementById('cross-btn');
 
-const user = document.getElementById('user-box');
-const userItem = document.getElementById('user-icon');
+
 const xBtn = document.getElementById('x-btn');
-let submenu = document.getElementById("submenu");
 
-// user.addEventListener('click', () => {
-//     // const showUser = userItem.getAttribute('data-visible');
-
-//     // if (showUser === 'false') {
-//     //     userItem.setAttribute('data-visible', true)
-//     // } else {
-//     //     userItem.setAttribute('data-visible', false)
-//     }) 
 var r = document.querySelector(':root');
 
 function togmenu() {
+   
     let currentValue = getComputedStyle(r).getPropertyValue('--no');
 
 
@@ -54,6 +45,18 @@ function togmenu() {
         r.style.setProperty('--no', '400px');
     } else {
         r.style.setProperty('--no', '0px');
+    }
+}
+
+function togcart() {
+   
+    let currentValue = getComputedStyle(r).getPropertyValue('--sho');
+
+
+    if (currentValue === '0px') {
+        r.style.setProperty('--sho', '400px');
+    } else {
+        r.style.setProperty('--sho', '0px');
     }
 }
 
@@ -80,13 +83,4 @@ shoppingBag.addEventListener('click', () => {
 })
 
 
-crossBtn.addEventListener('click', () => {
-    const showCart = CartItem.getAttribute('data-visible');
-
-    if (showCart === 'true') {
-        CartItem.setAttribute('data-visible', false)
-    }
-
-
-})
 

@@ -31,80 +31,111 @@
   </head>
   <body class="home">
 
-   <!-- ========================== Header Section ============================== -->
+    <!-- ========================== Header Section ============================== -->
 
-   <header class="primary-header container flex">
-    <div class="header-inner-one flex">
-        <div class="logo" style="text-decoration: none;">
-            <a href="index.html"><img src="image\logo.png.png" alt=""></a>
-        </div>
-        <button class="mobile-close-btn" data-visible="false" aria-controls="primary-navigation"><i class="uil uil-times-circle"></i></button>
-
-
-        <nav>
-            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                <li><a class="fs-100 fs-montserrat bold-500" href="index.html">Home</a></li>
-                <li><a class="active fs-100 fs-montserrat bold-500" href="shop.html">Shop</a></li>
-                <li><a class="fs-100 fs-montserrat bold-500" href="about.html">About</a></li>
-                <li><a class="fs-100 fs-montserrat bold-500" href="blog.html">Blog</a></li>
-                <li><a class="fs-100 fs-montserrat bold-500" href="contactus.html">Contact us</a></li>
-            </ul>
-        </nav>
-    </diV>
+    <header class="primary-header container flex">
+      <div class="header-inner-one flex">
+          <div class="logo">
+              <a href="index.html"><img src="image\logo.png.png" alt=""></a>
+          </div>
+          <button class="mobile-close-btn" data-visible="false" aria-controls="primary-navigation"><i class="uil uil-times-circle"></i></button>
 
 
-    <div class="header-login flex">
-            
-      <!-- ================================ Search ======================================== -->
-      <div class="home-search text-black flex">
-          <input type="text" placeholder="      search" class="srput fs-montserrat ">
-            <div class="ok">
-                <!-- <i class="uil text-black uil-search"></i> -->
-            </div>
-      </div>
+          <nav>
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                  <li><a class="fs-100 fs-montserrat bold-500" href="index.html">Home</a></li>
+                  <li><a class="active  fs-100 fs-montserrat bold-500" href="shop.html">Shop</a></li>
+                  <li><a class="fs-100 fs-montserrat bold-500" href="about.html">About</a></li>
+                  <li><a class="fs-100 fs-montserrat bold-500" href="blog.html">Blog</a></li>
+                  <li><a class="fs-100 fs-montserrat bold-500" href="contactus.html">Contact Us</a></li>
+              </ul>
+          </nav>
+      </diV>
+
+
+      <div class="header-login flex">
+          
+          <!-- ================================ Search ======================================== -->
+          <div class="home-search text-black flex">
+              
+              <input type="text" placeholder="      search" class="srput fs-montserrat ">
+                <div class="ok">
+                    <!-- <i class="uil text-black uil-search"></i> -->
+                </div>
+          </div>
 
 <!-- ================================ login ======================================== -->
 <a href="login.html"><button class="navbut bg-red text-white fs-100 fs-montserrat bold-500" style="text-decoration: none;" >login</button></a>
 
-      <!-- ================================ user icon ======================================== -->
-      <i id="user-box" aria-controls="user-icon" class="uil uil-user-circle"></i>
-      <!-- ================================ cart icon ======================================== -->
-      <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag"></i>
+        <!-- ================================ user icon ======================================== -->
 
+          <i id="user-box" aria-controls="user-icon" class="uil uil-user-circle" onclick="togmenu()"></i>
+          <div class="sub-menu-wrap" id="submenu">
+              <div class="sub-menu">
+                  <div class="user-info">
+                      <img src="image/user.png">
+                      <h3>User Babu</h3>
+                  </div>
+                  <hr>
+<!--  ---------------------------------------- --------------------------------- ------------------  -->
+<a href="#" class="sub-menu-link">
+  <img src="image/profile.png">
+  <p>Edit Profile</p>
+  <span>></span>
+</a>
+<!--  ---------------------------------------- --------------------------------- ------------------  -->
+<a href="#" class="sub-menu-link">
+  <img src="image/setting.png">
+  <p>Settings & Privacy</p>
+  <span>></span>
+</a>
+<!--  ---------------------------------------- --------------------------------- ------------------  -->
+<a href="contactus.html" class="sub-menu-link">
+  <img src="image/help.png">
+  <p>Help & Support</p>
+  <span>></span>
+</a>
+<!--  ---------------------------------------- --------------------------------- ------------------  -->
+<a href="#" class="sub-menu-link">
+  <img src="image/logout.png">
+  <p>Log Out</p>
+  <span>></span>
+</a>
 
-      <!-- ============= Cart Box ============ -->
-
-      <div id="cart-icon" data-visible="false" class="cart-icon">
-          <div class="shopping flex">
-              <p>Shopping Basket</p>
-              <i id="cross-btn" class="uil uil-times"></i>
+              </div>
           </div>
+          <!-- ================================ cart icon ======================================== -->
+          <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag" onclick="togcart()"></i>
 
-          <div class="cart bold-800 flex">
-              <i class="uil uil-shopping-cart-alt"></i>
-              <p>Cart is Empty</p>
+
+          <!-- ============= Cart Box ============ -->
+
+          <div id="cart-icon" data-visible="false" class="cart-icon">
+  
+      </div>
+
+      <div class="mobile-open-btn">
+          <i class="uil uil-align-right"></i>
+      </div>
+
+
+      <div class="sub-cart-wrap" id="subcart">
+          <div class="sub-cart">
+              <div class="cart-info">
+                  <h3>Shopping Cart</h3>
+                  
+              </div>
+              <hr>
+              <img src="image/cart.png">
+              <h2>Shopping Cart Empty</h2>
           </div>
       </div>
-      <!-- ======================================================== -->
-      <div id="user-icon" data-visible="false" class="user-icon">
-          <div class="user flex">
-              <p>User Account</p>
-              <i id="x-btn" class="uil uil-times"></i>
-          </div>
 
-          <div class="profile bold-800 flex">
-              <i class="uil uil-users-alt"></i>
-              <p>Manage profile</p>
-          </div>
-      </div>
-      <!-- ======================================================== -->
-  </div>
 
-  <div class="mobile-open-btn">
-      <i class="uil uil-align-right"></i>
-  </div>
-</header>
-<!-- ======================== End header section ================================ -->
+
+  </header>
+
+  <!-- ======================== End header section ================================ -->
 
 
     <!-- ================================= Shop section =================================== -->
