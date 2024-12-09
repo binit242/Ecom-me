@@ -31,10 +31,65 @@ padding-inline: 0.5rem;
 
 .about-btn{
     margin-top: 3rem;
+    animation: appry 0.8s ease-in-out;
 }
 
 .shop-feature{
     background-color: hsl(var(--clr-gray));
+}
+
+
+#fimg{
+    
+        animation: sco 0.5s ease-in-out;
+    
+}
+
+#ftxt h3{
+
+        animation: sco 0.6s ease-in-out;
+
+}
+
+
+#ftxt h1{
+
+    animation: appr 0.7s ease-in-out;
+
+}
+
+#ftxt p{
+
+    animation: appry 0.8s ease-in-out;
+
+}
+
+
+#secimg{
+    
+    animation: sco  ease-in-out;
+    animation-timeline: view();
+animation-range: entry 0% cover 40%;
+
+}
+
+#sectxt h3{
+    animation: sco  ease-in-out;
+    animation-timeline: view();
+animation-range: entry 0% cover 40%;
+}
+
+
+#sectxt h1{
+    animation: appr  ease-in-out;
+    animation-timeline: view();
+animation-range: entry 0% cover 40%;
+}
+
+#sectxt p{
+    animation: appry  ease-in-out;
+    animation-timeline: view();
+animation-range: entry 0% cover 40%;
 }
 
 

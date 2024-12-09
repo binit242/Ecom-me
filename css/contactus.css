@@ -24,12 +24,22 @@
     --gridgap:1rem;
 }
 
+#texto{
+    animation: appr 0.5s ease-in-out;
+}
+
 
 .contact-us input{ 
     border: 0;
     padding: 1rem 2rem; 
     border-radius: 2rem;
+    animation: sco 0.6s ease-in-out;
     }
+
+
+    .contact-us textarea{  
+        animation: sco 0.6s ease-in-out;
+       }
 
 .contact-us input:focus{
     outline: none;
@@ -50,6 +60,7 @@
         padding: 1rem 3rem;
         font-size: 1rem;
         margin-top: 1.5rem;
+        animation: sco 0.7s ease-in-out;
 }
 
 
@@ -58,6 +69,7 @@
     padding: 1rem 2rem;
     margin-block: 2rem;
     position: relative;
+    animation: appry 0.6s ease-in-out;
     }
 
 .map::before{
@@ -70,6 +82,12 @@
     position: absolute;
     }
 
+
+.support-info{
+    animation: sco  ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 /*=========Media Quaries========== */
 @media (min-width: 45em) {

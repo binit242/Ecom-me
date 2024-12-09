@@ -28,8 +28,261 @@
     <link rel="stylesheet" href="css/contactus.css" />
     <script src="js/index.js" defer></script>
     <script src="js/product.js" defer></script>
-    <!-- custon style Sheet & JavaScript -->
-    <title>@theblockchaincoders | Ecommerce Website</title>
-  </head>
-  <body></body>
+  <!-- custon style Sheet & JavaScript -->
+  <title>The Arcade Store</title>
+  <!-- Adds icon to title -->
+  <link rel="icon" href="image\title.png" type="image/x-icon" />
+  <body class="home">
+
+    <!-- ========================== Header Section ============================== -->
+
+    <header class="primary-header container flex">
+      <div class="header-inner-one flex">
+          <div class="logo">
+              <a href="index.html"><img src="image\logo.png.png" alt=""></a>
+          </div>
+          <button class="mobile-close-btn" data-visible="false" aria-controls="primary-navigation"><i class="uil uil-times-circle"></i></button>
+
+
+          <nav>
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                  <li><a class="fs-100 fs-montserrat bold-500" href="index.html">Home</a></li>
+                  <li><a class="fs-100 fs-montserrat bold-500" href="shop.html">Shop</a></li>
+                  <li><a class="fs-100 fs-montserrat bold-500" href="about.html">About</a></li>
+                  <li><a class="fs-100 fs-montserrat bold-500" href="blog.html">Blog</a></li>
+                  <li><a class="fs-100 fs-montserrat bold-500" href="contactus.html">Contact Us</a></li>
+              </ul>
+          </nav>
+      </diV>
+
+
+      <div class="header-login flex">
+          
+          <!-- ================================ Search ======================================== -->
+          <div class="home-search text-black flex">
+              
+              <input type="text" placeholder="      search" class="srput fs-montserrat ">
+                <div class="ok">
+                    <!-- <i class="uil text-black uil-search"></i> -->
+                </div>
+          </div>
+
+
+        <!-- ================================ user icon ======================================== -->
+
+          <i id="user-box" aria-controls="user-icon" class="uil uil-user-circle" onclick="togmenu()"></i>
+          <div class="sub-menu-wrap" id="submenu">
+              <div class="sub-menu">
+                  <div class="user-info">
+                      <img src="image/user.png">
+                      <h3>User Babu</h3>
+                  </div>
+                  <hr>
+<!--  ---------------------------------------- --------------------------------- ------------------  -->
+<a href="#" class="sub-menu-link">
+  <img src="image/profile.png">
+  <p>Edit Profile</p>
+  <span>></span>
+</a>
+<!--  ---------------------------------------- --------------------------------- ------------------  -->
+<a href="#" class="sub-menu-link">
+  <img src="image/setting.png">
+  <p>Settings & Privacy</p>
+  <span>></span>
+</a>
+<!--  ---------------------------------------- --------------------------------- ------------------  -->
+<a href="contactus.html" class="sub-menu-link">
+  <img src="image/help.png">
+  <p>Help & Support</p>
+  <span>></span>
+</a>
+<!--  ---------------------------------------- --------------------------------- ------------------  -->
+<a href="#" class="sub-menu-link">
+  <img src="image/logout.png">
+  <p>Log Out</p>
+  <span>></span>
+</a>
+
+              </div>
+          </div>
+          <!-- ================================ cart icon ======================================== -->
+          <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag" onclick="togcart()"></i>
+
+
+          <!-- ============= Cart Box ============ -->
+
+          <div id="cart-icon" data-visible="false" class="cart-icon">
+          
+      </div>
+
+      <div class="mobile-open-btn">
+          <i class="uil uil-align-right"></i>
+      </div>
+
+
+      <div class="sub-cart-wrap" id="subcart">
+          <div class="sub-cart">
+              <div class="cart-info">
+                  <h3>Shopping Cart</h3>
+                  
+              </div>
+              <hr>
+              <img src="image/cart.png">
+              <h2>Shopping Cart Empty</h2>
+          </div>
+      </div>
+
+
+
+  </header>
+
+  <!-- ======================== End header section ================================ -->
+
+
+
+<!-- ======================== product section ================================ -->
+
+
+
+<section id="prodoct"> 
+<div class="container"> 
+  <div class="wrapper grid">
+    <div class="product-box"> 
+      <div class="all-images">
+        <div class="small-images">
+          <img src="image/gmpcor.png" onclick="clickimg(this)">
+          <img src="image/gmpcf.png" onclick="clickimg(this)">
+          <img src="image/gmpcb.png" onclick="clickimg(this)">
+          <img src="image/gmpcfan.png" onclick="clickimg(this)">
+        </div>
+        <div class="main-images">
+          <img id="mainImage" src="image/gmpcor.png"  onclick="clickimg(this)">
+        </div>
+      </div>
+    </div>
+        <div class="text">
+           <div class="content">
+            <!-- <p class="brand">Brand : Apple</p> -->
+             <h2> NZXT RTX-4090 gaming pc (5tb,32gb) </h2>
+             <div class="review">
+                <span>(4.6)</span>
+                <span class="uil uil-star"></span>
+             </div>
+             <div class="price-box">
+                <p class="price">&#8377; 77,990</p>
+                <strike>&#8377; 79,990</strike>
+             </div>
+             <p>size:<select name="size" >
+                <option value="select colour"> Select Colour </option>
+                <option value="black"> black </option>
+                <option value="blue"> blue </option>
+                <option value="green"> green </option>
+             </select></p>
+
+             <p>Quantity 
+              <div>
+              <button  class="boton" id="minus">−</button>
+              <input type="number" value="0" id="input"/>
+              <button class="boton" id="plus">+</button>
+              </div>
+             </p>
+             <button class="cart large-btn bg-red bold-800 text-white"><span class="uil uil-shopping-cart"></span>
+            Add to Cart
+            </button>
+            <button  class="buy large-btn bg-yellow bold-800 text-white">
+              <span class="uil uil-shopping-bag"></span>
+              Buy now
+            </button>
+           </div>
+        </div>
+  </div>
+</div>
+</section>
+
+
+
+<!-- ======================== End product section ================================ -->
+
+
+
+
+
+    <!-- ========================= Brand Section ========================== -->
+
+    <section class="brands grid">
+      <div>
+          <img src="image/br-1.png">
+      </div>
+      <div>
+          <img src="image/br-2.png">
+      </div>
+      <div>
+          <img src="image/br-3.png">
+      </div>
+      <div>
+          <img src="image/br-4.png">
+      </div>
+      <div>
+          <img src="image/br-5.png">
+      </div>
+      <div>
+          <img src="image/br-6.png">
+      </div>
+    </section>
+    
+    <!-- ========================= End of Brand Section ========================== -->
+    
+    
+    <!-- ========================= footer Section ========================== -->
+    
+    <section class="footer grid">
+      <div class="footer-logo grid">
+        <a href="index.html"><img src="image\logo.png.png" alt="" id="log"></a>
+                <p class="fs-montserrat fs-100"> Connect with us</p>
+                    <div class="social-media flex">
+                        <i class="uil uil-facebook-f"></i>
+                        <i class="uil uil-instagram"></i>
+                        <i class="uil uil-twitter"></i>
+                        <i class="uil uil-linkedin"></i>
+                        <i class="uil uil-telegram"></i>
+                        <i class="uil uil-github"></i>
+                    </div>
+        </div>
+            <div class="footer-menu grid">
+                 <h3> Quick Links </h3>
+                 <ul>
+                    <li><a class="fs-montserrat text-black fs-100" href="index.html">Home</a></li>
+                    <li><a class="fs-montserrat text-black fs-100" href="shop.html">Shop</a></li>
+                    <li><a class="fs-montserrat text-black fs-100" href="about.html">About</a></li>
+                    <li><a class="fs-montserrat text-black fs-100" href="blog.html">Blogs</a></li>
+                    <li><a class="fs-montserrat text-black fs-100" href="contactus.html">Contact</a></li>
+                 </ul>
+            </div> 
+            <div class="contact grid">
+                <h3 class="fs-poppins fs-200 bold-800">Contact</h3>
+                <p class="fs-montserrat">+99 (0) 101 0000 888 ______________________ 40 , cross road , jhilbagan , dumdum , kolkata - 7000030 , west bengal , india</p>
+            </div>
+            <div class="emails grid">
+            <h3 class="fs-poppins fs-200 bold-800"> Subscribe and connect </h3>
+            <p class="updates fs-poppins fs-300 bold-800"> For latest News & updates </p>
+            
+            <div class="inputfield flex bg-gray"> 
+            <input type="email" placeholder="Enter Your Email" class="fs-montserrat bg-gray">
+                <button class="bg-red text-white fs-poppins fs-50"> Subscribe </button>
+            </div>
+            </div>
+    </section>
+    <!-- ========================= End of footer Section ========================== -->
+    
+    <!-- ========================= Copyright Section ========================== -->
+    
+    <section class="copyright">
+        <!-- <p class="c-font fs-montserrat fs-100">2024 Store. All rights reserved </p> -->
+        <p class="fs-montserrat fs-100 text-align p-top">&#169 Privacy Policy reserved to The Arcade Team 2024. Terms & Conditions applied. </p>
+        </section>
+    <!-- ========================= End of Copyright Section ========================== -->
+   
+   
+  </body>
 </html>
+

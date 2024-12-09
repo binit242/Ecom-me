@@ -479,8 +479,8 @@
             border-radius: 2rem;
             cursor: pointer;
             z-index: 9999;
-            transition: all 1s ease-in-out;
-            -webkit-transition: all 1s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
         }
          .navbut:hover {
             box-shadow: 0px 0px 10px  #979797d2;
@@ -884,8 +884,8 @@
               border-radius: 2rem;
               cursor: pointer;
               z-index: 9999;
-              transition: all 1s ease-in-out;
-              -webkit-transition: all 1s ease-in-out;
+              transition: all 0.5s ease-in-out;
+              -webkit-transition: all 0.5s ease-in-out;
           }
 
           
@@ -954,8 +954,10 @@
           }
         }
         #hed{
-          animation: sco 0.8s ease-in-out;
+          animation: sco 0.8s ease-in-out  ;
+          
         }
+        
         @keyframes sco{
           0%{
               transform: scale(0.5);
@@ -966,6 +968,7 @@
               opacity: 1;
           }
         }
+        
         #bt1{
           animation: sco 1s ease-in-out;
           
